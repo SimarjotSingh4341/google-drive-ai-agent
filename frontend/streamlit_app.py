@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import os
 
-BACKEND_URL = os.getenv("BACKEND_URL", "google-drive-ai-agent-production.up.railway.app")
+BACKEND_URL = os.getenv("BACKEND_URL", "https://google-drive-ai-agent-production.up.railway.app/chat")
 
 st.set_page_config(page_title="Google Drive AI Assistant")
 
