@@ -1,52 +1,41 @@
 # Google Drive Conversational AI Agent
 
-## Features
-- Conversational file search
-- Google Drive API integration
-- LangGraph agent
-- Streamlit chat UI
-- Natural language understanding
+An AI-powered conversational assistant that helps users search, discover, and filter files stored in Google Drive using natural language queries.
 
-## Tech Stack
-- FastAPI
-- LangGraph
-- OpenAI
-- Streamlit
-- Google Drive API
+Built using FastAPI, LangGraph, Streamlit, and Google Drive API.
 
-## Setup
+---
 
-### 1. Install Dependencies
+## Live Demo
 
-Backend:
-pip install -r backend/requirements.txt
+### Streamlit App
+[Add Your Streamlit URL Here]
 
-Frontend:
-pip install -r frontend/requirements.txt
+### GitHub Repository
+[Add Your GitHub Repo URL Here]
 
-### 2. Configure Environment Variables
+---
 
-Copy:
-backend/.env.example
+# Features
 
-to:
-backend/.env
+- Conversational AI interface for Google Drive search
+- Natural language understanding using LLMs
+- Google Drive API integration using Service Accounts
+- Supports:
+  - File name search
+  - Partial matches
+  - File type filtering
+  - Nested folder discovery
+  - Full-text search
+  - Recent file search
+- Supports PDFs, images, docs, spreadsheets, and more
+- Interactive Streamlit chat interface
+- FastAPI backend with LangGraph agent orchestration
+- Cloud deployment using Railway + Streamlit Cloud
 
-### 3. Add Service Account Credentials
+---
 
-Place your JSON file inside:
-credentials/service_account.json
+# Example Queries
 
-### 4. Run Backend
-
-cd backend
-uvicorn app.main:app --reload
-
-### 5. Run Frontend
-
-cd frontend
-streamlit run streamlit_app.py
-
-## Deployment
-- Backend: Railway / Render
-- Frontend: Streamlit Cloud
+```text
+Find all PDFs
